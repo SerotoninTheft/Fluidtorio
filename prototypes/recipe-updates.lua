@@ -71,3 +71,50 @@ set_recipe(
     { type = "item", name = "automation-science-pack", amount = 4 }
   }
 )
+
+set_recipe(
+  "inserter",
+  false,
+  0.5,
+  {
+    { type = "item", name = "iron-gear-wheel", amount = 2 },
+    { type = "item", name = "iron-plate", amount = 2 },
+    { type = "item", name = "electronic-circuit", amount = 2 },
+    { type = "fluid", name = "weak-sealant", amount = 30 },
+    { type = "fluid", name = "light-lubricant", amount = 20 }
+  },
+  {
+    { type = "item", name = "inserter", amount = 5 }
+  }
+)
+
+set_recipe(
+  "transport-belt",
+  false,
+  1,
+  {
+    { type = "fluid", name = "light-lubricant", amount = 50 },
+    { type = "fluid", name = "basic-solvent", amount = 30 },
+    { type = "item", name = "iron-plate", amount = 2 },
+    { type = "item", name = "iron-gear-wheel", amount = 2 }
+  },
+  {
+    { type = "item", name = "transport-belt", amount = 10 }
+  }
+)
+
+set_recipe(
+  "logistic-science-pack",
+  false,
+  10,
+  {
+    { type = "item", name = "inserter", amount = 5 },
+    { type = "item", name = "transport-belt", amount = 5 },
+    { type = "fluid", name = "basic-solvent", amount = 10 },
+    { type = "fluid", name = "weak-sealant", amount = 20 },
+    { type = "fluid", name = "mineral-slurry", amount = 5 }
+  },
+  {
+    { type = "item", name = "logistic-science-pack", amount = 5 }
+  }
+)
