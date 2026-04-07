@@ -94,3 +94,87 @@ data:extend({
     }
   }
 })
+
+
+
+data:extend({
+  {
+    type = "recipe",
+    name = "brine",
+    category = "crafting-with-fluid",
+    subgroup = "intermediate-product",
+    enabled = false,
+    energy_required = 1,
+    ingredients = {
+      { type = "fluid", name = "water", amount = 100 },
+      { type = "fluid", name = "mineral-water", amount = 30 }
+    },
+    results = {
+      { type = "fluid", name = "brine", amount = 50 }
+    }
+  },
+  {
+    type = "recipe",
+    name = "limewater",
+    category = "crafting-with-fluid",
+    subgroup = "intermediate-product",
+    enabled = false,
+    energy_required = 2,
+    ingredients = {
+      { type = "item", name = "stone", amount = 4 },
+      { type = "fluid", name = "mineral-water", amount = 20 },
+      { type = "fluid", name = "weak-acid", amount = 10 },
+      { type = "fluid", name = "clean-water", amount = 50 }
+    },
+    results = {
+      { type = "fluid", name = "limewater", amount = 100 }
+    }
+  },
+  {
+    type = "recipe",
+    name = "basic-solvent",
+    category = "crafting-with-fluid",
+    subgroup = "intermediate-product",
+    enabled = false,
+    energy_required = 1,
+    ingredients = {
+      { type = "fluid", name = "limewater", amount = 30 },
+      { type = "fluid", name = "brine", amount = 20 }
+    },
+    results = {
+      { type = "fluid", name = "basic-solvent", amount = 50 }
+    }
+  },
+  {
+    type = "recipe",
+    name = "mineral-slurry",
+    category = "crafting-with-fluid",
+    subgroup = "intermediate-product",
+    enabled = false,
+    energy_required = 2,
+    ingredients = {
+      { type = "fluid", name = "heavy-tar", amount = 20 },
+      { type = "fluid", name = "mineral-water", amount = 100 },
+      { type = "fluid", name = "basic-solvent", amount = 30 }
+    },
+    results = {
+      { type = "fluid", name = "mineral-slurry", amount = 100 }
+    }
+  },
+  {
+    type = "recipe",
+    name = "weak-sealant",
+    category = "crafting-with-fluid",
+    subgroup = "intermediate-product",
+    enabled = false,
+    energy_required = 1,
+    ingredients = {
+      { type = "fluid", name = "mineral-slurry", amount = 20 },
+      { type = "fluid", name = "heavy-tar", amount = 10 },
+      { type = "fluid", name = "limewater", amount = 50 }
+    },
+    results = {
+      { type = "fluid", name = "weak-sealant", amount = 50 }
+    }
+  }
+})
