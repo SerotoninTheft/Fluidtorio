@@ -1,0 +1,7 @@
+require("prototypes.fluids")
+require("prototypes.recipes")
+require("prototypes.recipe-updates")
+require("prototypes.assemblers")
+require("prototypes.technology")
+require("prototypes.inefficient-recipes")
+require("prototypes.technology-updates")

@@ -1,0 +1,9 @@
+{
+  "name": "Fluidtorio",
+  "version": "1.0.0",
+  "title": "Fluidtorio",
+  "author": "GermanCrow",
+  "factorio_version": "2.0",
+  "description": "Overhaul to factorio, adding a large amount of new fluids in your production lines!",
+  "dependencies": ["base >= 2.0"]
+}
