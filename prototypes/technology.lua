@@ -21,5 +21,23 @@ data:extend({
       { type = "unlock-recipe", recipe = "light-lubricant" }
     },
     order = "a-b-a"
-  }
+  },
+  {
+    type = "technology",
+    name = "synthetic-wood",
+    icon = "__Fluidtorio__/graphics/technology/synthetic-wood.png",
+    icon_size = 256,
+    prerequisites = { "automation" },
+    unit = {
+      count = 50,
+      ingredients = {
+        { "automation-science-pack", 1 }
+      },
+      time = 30
+    },
+    effects = {
+      { type = "unlock-recipe", recipe = "synthetic-wood" },
+    },
+    order = "a-b-a"
+  },
 })
