@@ -7,11 +7,11 @@ data:extend({
     type = "recipe",
     name = "heavy-tar",
     category = "crafting-with-fluid",
-    subgroup = "intermediate-product",
+    subgroup = "fluid-recipes",
     enabled = false,
     energy_required = 1,
     ingredients = {
-      { type = "item", name = "coal", amount = 4 },
+      { type = "item", name = "coal", amount = 2 },
       { type = "fluid", name = "water", amount = 20 }
     },
     results = {
@@ -22,11 +22,11 @@ data:extend({
     type = "recipe",
     name = "weak-acid",
     category = "crafting-with-fluid",
-    subgroup = "intermediate-product",
+    subgroup = "fluid-recipes",
     enabled = false,
     energy_required = 1,
     ingredients = {
-      { type = "fluid", name = "heavy-tar", amount = 40 },
+      { type = "fluid", name = "heavy-tar", amount = 10 },
       { type = "fluid", name = "water", amount = 20 },
       { type = "item", name = "coal", amount = 1 }
     },
@@ -38,7 +38,7 @@ data:extend({
     type = "recipe",
     name = "bioslurry",
     category = "crafting-with-fluid",
-    subgroup = "intermediate-product",
+    subgroup = "fluid-recipes",
     enabled = false,
     energy_required = 1,
     ingredients = {
@@ -54,7 +54,7 @@ data:extend({
     type = "recipe",
     name = "clean-water",
     category = "crafting-with-fluid",
-    subgroup = "intermediate-product",
+    subgroup = "fluid-recipes",
     enabled = false,
     energy_required = 1,
     ingredients = {
@@ -68,13 +68,16 @@ data:extend({
     type = "recipe",
     name = "mineral-water",
     category = "crafting-with-fluid",
-    subgroup = "intermediate-product",
+    subgroup = "fluid-recipes",
     enabled = false,
     energy_required = 1,
     ingredients = {
       { type = "fluid", name = "clean-water", amount = 40 },
       { type = "fluid", name = "weak-acid", amount = 5 },
-      { type = "item", name = "stone", amount = 3 }
+      { type = "item", name = "stone", amount = 3 },
+        { type = "item", name = "iron-ore", amount = 3 },
+      { type = "item", name = "copper-ore", amount = 3 }
+
     },
     results = {
       { type = "fluid", name = "mineral-water", amount = 50 }
@@ -84,11 +87,11 @@ data:extend({
     type = "recipe",
     name = "light-lubricant",
     category = "crafting-with-fluid",
-    subgroup = "intermediate-product",
+    subgroup = "fluid-recipes",
     enabled = false,
     energy_required = 1,
     ingredients = {
-      { type = "fluid", name = "mineral-water", amount = 20 },
+      { type = "fluid", name = "mineral-water", amount = 30 },
       { type = "fluid", name = "bioslurry", amount = 30 },
       { type = "fluid", name = "heavy-tar", amount = 10 },
       { type = "item", name = "coal", amount = 1 }
@@ -110,7 +113,7 @@ data:extend({
     type = "recipe",
     name = "brine",
     category = "crafting-with-fluid",
-    subgroup = "intermediate-product",
+    subgroup = "fluid-recipes",
     enabled = false,
     energy_required = 1,
     ingredients = {
@@ -125,12 +128,12 @@ data:extend({
     type = "recipe",
     name = "limewater",
     category = "crafting-with-fluid",
-    subgroup = "intermediate-product",
+    subgroup = "fluid-recipes",
     enabled = false,
     energy_required = 2,
     ingredients = {
       { type = "item", name = "stone", amount = 4 },
-      { type = "fluid", name = "mineral-water", amount = 20 },
+      { type = "fluid", name = "mineral-water", amount = 40 },
       { type = "fluid", name = "weak-acid", amount = 10 },
       { type = "fluid", name = "clean-water", amount = 50 }
     },
@@ -142,7 +145,7 @@ data:extend({
     type = "recipe",
     name = "basic-solvent",
     category = "crafting-with-fluid",
-    subgroup = "intermediate-product",
+    subgroup = "fluid-recipes",
     enabled = false,
     energy_required = 1,
     ingredients = {
@@ -157,7 +160,7 @@ data:extend({
     type = "recipe",
     name = "mineral-slurry",
     category = "crafting-with-fluid",
-    subgroup = "intermediate-product",
+    subgroup = "fluid-recipes",
     enabled = true,
     energy_required = 2,
     ingredients = {
@@ -173,7 +176,7 @@ data:extend({
     type = "recipe",
     name = "weak-sealant",
     category = "crafting-with-fluid",
-    subgroup = "intermediate-product",
+    subgroup = "fluid-recipes",
     enabled = true,
     energy_required = 1,
     ingredients = {
@@ -189,7 +192,7 @@ data:extend({
     type = "recipe",
     name = "synthetic-wood",
     category = "crafting-with-fluid",
-    subgroup = "intermediate-product",
+    subgroup = "raw-material",
     enabled = true,
     energy_required = 0.5,
     ingredients = {

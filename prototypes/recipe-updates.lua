@@ -23,9 +23,23 @@ set_recipe(
     { type = "fluid", name = "clean-water", amount = 30 }
   },
   {
-    { type = "item", name = "copper-cable", amount = 4 }
+    { type = "item", name = "copper-cable", amount = 6 }
   }
 )
+
+set_recipe(
+  "iron-stick",
+  false,
+  0.5,
+  {
+    { type = "item", name = "iron-plate", amount = 1 },
+    { type = "fluid", name = "clean-water", amount = 30 }
+  },
+  {
+    { type = "item", name = "iron-stick", amount = 3 }
+  }
+)
+
 
 set_recipe(
   "electronic-circuit",
