@@ -72,6 +72,53 @@ set_recipe(
   }
 )
 
+set_recipe(
+  "splitter",
+  false,
+  1,
+  {
+    { type = "item", name = "iron-plate", amount = 5 },
+    { type = "item", name = "transport-belt", amount = 4 },
+    { type = "item", name = "electronic-circuit", amount = 5 },
+    { type = "fluid", name = "light-lubricant", amount = 30 },
+  },
+  {
+    { type = "item", name = "splitter", amount = 2 }
+  }
+)
+
+set_recipe(
+  "underground-belt",
+  false,
+  1,
+  {
+    { type = "item", name = "iron-plate", amount = 10 },
+    { type = "item", name = "transport-belt", amount = 5 },
+    { type = "fluid", name = "light-lubricant", amount = 40 },
+  },
+  {
+    { type = "item", name = "underground-belt", amount = 4 }
+  }
+)
+
+set_recipe(
+  "fast-inserter",
+  false,
+  0.5,
+  {
+    { type = "item", name = "iron-plate", amount = 3 },
+    { type = "item", name = "electronic-circuit", amount = 3 },
+    { type = "item", name = "inserter", amount = 2 },
+    { type = "fluid", name = "light-lubricant", amount = 30 },
+  },
+  {
+    { type = "item", name = "fast-inserter", amount = 2 }
+  }
+)
+
+
+
+
 
 -- LOGISTICS
 
@@ -119,5 +166,81 @@ set_recipe(
   },
   {
     { type = "item", name = "logistic-science-pack", amount = 5 }
+  }
+)
+
+set_recipe(
+  "stone-wall",
+  false,
+  1,
+  {
+    { type = "item", name = "stone-brick", amount = 8 },
+    { type = "fluid", name = "heavy-tar", amount = 20 },
+    { type = "fluid", name = "mineral-slurry", amount = 30 }
+  },
+  {
+    { type = "item", name = "stone-wall", amount = 2 }
+  }
+)
+
+
+
+-- CHEMICAL
+
+set_recipe(
+  "flying-robot-frame",
+  false,
+  10,
+  {
+    { type = "item", name = "steel-plate", amount = 2 },
+    { type = "item", name = "iron-gear-wheel", amount = 3 },
+    { type = "item", name = "electronic-circuit", amount = 3 },
+    { type = "fluid", name = "weak-sealant", amount = 20 },
+    { type = "fluid", name = "light-lubricant", amount = 20 },
+
+  },
+  {
+    { type = "item", name = "flying-robot-frame", amount = 1 }
+  }
+)
+set_recipe(
+  "roboport",
+  false,
+  10,
+  {
+    { type = "item", name = "steel-plate", amount = 20 },
+    { type = "item", name = "iron-gear-wheel", amount = 30 },
+    { type = "item", name = "electronic-circuit", amount = 30 },
+    { type = "fluid", name = "weak-sealant", amount = 200 },
+
+  },
+  {
+    { type = "item", name = "roboport", amount = 1 }
+  }
+)
+set_recipe(
+  "storage-chest",
+  false,
+  0.5,
+  {
+    { type = "item", name = "steel-chest", amount = 1 },
+    { type = "item", name = "electronic-circuit", amount = 3 },
+    { type = "fluid", name = "basic-solvent", amount = 50 },
+  },
+  {
+    { type = "item", name = "storage-chest", amount = 1 }
+  }
+)
+set_recipe(
+  "passive-provider-chest",
+  false,
+  0.5,
+  {
+    { type = "item", name = "steel-chest", amount = 1 },
+    { type = "item", name = "electronic-circuit", amount = 3 },
+    { type = "fluid", name = "basic-solvent", amount = 50 },
+  },
+  {
+    { type = "item", name = "passive-provider-chest", amount = 1 }
   }
 )

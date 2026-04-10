@@ -27,7 +27,7 @@ data:extend({
     name = "synthetic-wood",
     icon = "__Fluidtorio__/graphics/technology/synthetic-wood.png",
     icon_size = 256,
-    prerequisites = { "automation" },
+    prerequisites = { "light-lubricant" },
     unit = {
       count = 50,
       ingredients = {
@@ -40,4 +40,44 @@ data:extend({
     },
     order = "a-b-a"
   },
+  {
+    type = "technology",
+    name = "basic-solvent",
+    icon = "__Fluidtorio__/graphics/technology/basic-solvent.png",
+    icon_size = 256,
+    prerequisites = { "light-lubricant" },
+    unit = {
+      count = 50,
+      ingredients = {
+        { "automation-science-pack", 1 }
+      },
+      time = 30
+    },
+    effects = {
+      { type = "unlock-recipe", recipe = "basic-solvent" },
+      { type = "unlock-recipe", recipe = "brine" },
+      { type = "unlock-recipe", recipe = "limewater" },
+    },
+    order = "a-b-a"
+  },
+  {
+    type = "technology",
+    name = "weak-sealant",
+    icon = "__Fluidtorio__/graphics/technology/weak-sealant.png",
+    icon_size = 256,
+    prerequisites = { "basic-solvent" },
+    unit = {
+      count = 50,
+      ingredients = {
+        { "automation-science-pack", 1 }
+      },
+      time = 30
+    },
+    effects = {
+      { type = "unlock-recipe", recipe = "weak-sealant" },
+      { type = "unlock-recipe", recipe = "mineral-slurry" },
+    },
+    order = "a-b-a"
+  },
+
 })

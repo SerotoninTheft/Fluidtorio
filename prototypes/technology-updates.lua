@@ -25,6 +25,12 @@ local function add_recipe_unlock(technology_name, recipe_name)
   table.insert(tech.effects, { type = "unlock-recipe", recipe = recipe_name })
 end
 
+
+
+
+
+
+
 remove_recipe_unlock("electronics", "electronic-circuit")
 add_recipe_unlock("electronics", "inefficient-electronic-circuit")
 add_recipe_unlock("light-lubricant", "electronic-circuit")
@@ -35,12 +41,39 @@ add_recipe_unlock("light-lubricant", "copper-cable")
 
 remove_recipe_unlock("electronics", "inserter")
 add_recipe_unlock("electronics", "inefficient-inserter")
-add_recipe_unlock("light-lubricant", "inserter")
+add_recipe_unlock("weak-sealant", "inserter")
 
 remove_recipe_unlock("automation-science-pack", "automation-science-pack")
 add_recipe_unlock("automation-science-pack", "inefficient-automation-science-pack")
 add_recipe_unlock("light-lubricant", "automation-science-pack")
 
 add_recipe_unlock("light-lubricant", "iron-gear-wheel")
+add_recipe_unlock("basic-solvent", "transport-belt")
 
-add_recipe_unlock("light-lubricant", "transport-belt")
+
+add_recipe_unlock("logistic-science-pack", "chemical-plant")
+remove_recipe_unlock("oil-processing", "chemical-plant")
+
+table.insert(data.raw.technology["logistic-science-pack"].prerequisites, "weak-sealant")
+table.insert(data.raw.technology["logistics"].prerequisites, "light-lubricant")
+table.insert(data.raw.technology["fast-inserter"].prerequisites, "light-lubricant")
+table.insert(data.raw.technology["stone-wall"].prerequisites, "weak-sealant")
+
+
+data.raw.technology["robotics"].prerequisites = {"logistic-science-pack"}
+data.raw.technology["robotics"].unit = {
+      count = 150,
+      ingredients = {
+        { "automation-science-pack", 1 },
+        { "logistic-science-pack", 1 },
+      },
+      time = 15
+    }
+data.raw.technology["construction-robotics"].unit = {
+      count = 150,
+      ingredients = {
+        { "automation-science-pack", 1 },
+        { "logistic-science-pack", 1 },
+      },
+      time = 15
+    }

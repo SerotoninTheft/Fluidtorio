@@ -111,7 +111,7 @@ data:extend({
     name = "brine",
     category = "crafting-with-fluid",
     subgroup = "intermediate-product",
-    enabled = true,
+    enabled = false,
     energy_required = 1,
     ingredients = {
       { type = "fluid", name = "water", amount = 100 },
@@ -126,7 +126,7 @@ data:extend({
     name = "limewater",
     category = "crafting-with-fluid",
     subgroup = "intermediate-product",
-    enabled = true,
+    enabled = false,
     energy_required = 2,
     ingredients = {
       { type = "item", name = "stone", amount = 4 },
@@ -143,7 +143,7 @@ data:extend({
     name = "basic-solvent",
     category = "crafting-with-fluid",
     subgroup = "intermediate-product",
-    enabled = true,
+    enabled = false,
     energy_required = 1,
     ingredients = {
       { type = "fluid", name = "limewater", amount = 30 },
