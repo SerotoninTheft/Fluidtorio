@@ -40,6 +40,30 @@ data:extend({
     },
     order = "a-b-a"
   },
+
+  {
+    type = "technology",
+    name = "efficient-fluid-recipes",
+    icon = "__Fluidtorio__/graphics/technology/efficient-fluid-recipes.png",
+    icon_size = 256,
+    prerequisites = { "light-lubricant" },
+    unit = {
+      count = 50,
+      ingredients = {
+        { "automation-science-pack", 1 }
+      },
+      time = 30
+    },
+    effects = {
+      { type = "unlock-recipe", recipe = "automation-science-pack" },
+      { type = "unlock-recipe", recipe = "copper-cable" },
+      { type = "unlock-recipe", recipe = "electronic-circuit" },
+      { type = "unlock-recipe", recipe = "iron-gear-wheel" },
+    },
+    order = "a-b-a"
+  },
+
+
   {
     type = "technology",
     name = "basic-solvent",
@@ -79,5 +103,26 @@ data:extend({
     },
     order = "a-b-a"
   },
+
+  {
+    type = "technology",
+    name = "efficient-fluid-logistics",
+    icon = "__Fluidtorio__/graphics/technology/efficient-fluid-logistics.png",
+    icon_size = 256,
+    prerequisites = { "weak-sealant" },
+    unit = {
+      count = 50,
+      ingredients = {
+        { "automation-science-pack", 1 }
+      },
+      time = 30
+    },
+    effects = {
+      { type = "unlock-recipe", recipe = "inserter" },
+      { type = "unlock-recipe", recipe = "transport-belt" },
+    },
+    order = "a-b-a"
+  },
+
 
 })

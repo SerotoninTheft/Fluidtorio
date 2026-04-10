@@ -33,31 +33,29 @@ end
 
 remove_recipe_unlock("electronics", "electronic-circuit")
 add_recipe_unlock("electronics", "inefficient-electronic-circuit")
-add_recipe_unlock("light-lubricant", "electronic-circuit")
 
 remove_recipe_unlock("electronics", "copper-cable")
 add_recipe_unlock("electronics", "inefficient-copper-cable")
-add_recipe_unlock("light-lubricant", "copper-cable")
 
 remove_recipe_unlock("electronics", "inserter")
 add_recipe_unlock("electronics", "inefficient-inserter")
-add_recipe_unlock("weak-sealant", "inserter")
 
 remove_recipe_unlock("automation-science-pack", "automation-science-pack")
 add_recipe_unlock("automation-science-pack", "inefficient-automation-science-pack")
-add_recipe_unlock("light-lubricant", "automation-science-pack")
 
-add_recipe_unlock("light-lubricant", "iron-gear-wheel")
-add_recipe_unlock("basic-solvent", "transport-belt")
 
 
 add_recipe_unlock("logistic-science-pack", "chemical-plant")
 remove_recipe_unlock("oil-processing", "chemical-plant")
 
-table.insert(data.raw.technology["logistic-science-pack"].prerequisites, "weak-sealant")
+table.insert(data.raw.technology["logistic-science-pack"].prerequisites, "efficient-fluid-logistics")
+table.insert(data.raw.technology["logistic-science-pack"].prerequisites, "efficient-fluid-recipes")
+
 table.insert(data.raw.technology["logistics"].prerequisites, "light-lubricant")
 table.insert(data.raw.technology["fast-inserter"].prerequisites, "light-lubricant")
 table.insert(data.raw.technology["stone-wall"].prerequisites, "weak-sealant")
+table.insert(data.raw.technology["electric-mining-drill"].prerequisites, "weak-sealant")
+
 
 
 data.raw.technology["robotics"].prerequisites = {"logistic-science-pack"}

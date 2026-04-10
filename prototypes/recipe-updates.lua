@@ -183,6 +183,20 @@ set_recipe(
   }
 )
 
+set_recipe(
+  "electric-mining-drill",
+  false,
+  0.5,
+  {
+    { type = "item", name = "electronic-circuit", amount = 5 },
+    { type = "item", name = "iron-gear-wheel", amount = 5 },
+    { type = "item", name = "iron-plate", amount = 10 },
+    { type = "fluid", name = "weak-sealant", amount = 30 }
+  },
+  {
+    { type = "item", name = "electric-mining-drill", amount = 2 }
+  }
+)
 
 
 -- CHEMICAL
