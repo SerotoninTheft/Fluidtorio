@@ -52,7 +52,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "clean-water",
+    name = "stage-1-water-purification",
     category = "crafting-with-fluid",
     subgroup = "fluid-recipes",
     enabled = false,

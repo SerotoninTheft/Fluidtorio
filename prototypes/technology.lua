@@ -34,7 +34,7 @@ data:extend({
       time = 15
     },
     effects = {
-      { type = "unlock-recipe", recipe = "clean-water" },
+      { type = "unlock-recipe", recipe = "stage-1-water-purification" },
       { type = "unlock-recipe", recipe = "mineral-water" },
       { type = "unlock-recipe", recipe = "light-lubricant" }
     },
