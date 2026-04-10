@@ -1,3 +1,7 @@
+-- RECIPES FOR AUTOMATION (DONE)
+
+
+
 data:extend({
   {
     type = "recipe",
@@ -97,13 +101,17 @@ data:extend({
 
 
 
+-- RECIPES FOR LOGISTICS
+
+
+
 data:extend({
   {
     type = "recipe",
     name = "brine",
     category = "crafting-with-fluid",
     subgroup = "intermediate-product",
-    enabled = false,
+    enabled = true,
     energy_required = 1,
     ingredients = {
       { type = "fluid", name = "water", amount = 100 },
@@ -118,7 +126,7 @@ data:extend({
     name = "limewater",
     category = "crafting-with-fluid",
     subgroup = "intermediate-product",
-    enabled = false,
+    enabled = true,
     energy_required = 2,
     ingredients = {
       { type = "item", name = "stone", amount = 4 },
@@ -135,7 +143,7 @@ data:extend({
     name = "basic-solvent",
     category = "crafting-with-fluid",
     subgroup = "intermediate-product",
-    enabled = false,
+    enabled = true,
     energy_required = 1,
     ingredients = {
       { type = "fluid", name = "limewater", amount = 30 },
@@ -150,7 +158,7 @@ data:extend({
     name = "mineral-slurry",
     category = "crafting-with-fluid",
     subgroup = "intermediate-product",
-    enabled = false,
+    enabled = true,
     energy_required = 2,
     ingredients = {
       { type = "fluid", name = "heavy-tar", amount = 20 },
@@ -166,7 +174,7 @@ data:extend({
     name = "weak-sealant",
     category = "crafting-with-fluid",
     subgroup = "intermediate-product",
-    enabled = false,
+    enabled = true,
     energy_required = 1,
     ingredients = {
       { type = "fluid", name = "mineral-slurry", amount = 20 },
@@ -175,6 +183,21 @@ data:extend({
     },
     results = {
       { type = "fluid", name = "weak-sealant", amount = 50 }
+    }
+  },
+  {
+    type = "recipe",
+    name = "synthetic-wood",
+    category = "crafting-with-fluid",
+    subgroup = "intermediate-product",
+    enabled = true,
+    energy_required = 0.5,
+    ingredients = {
+      { type = "fluid", name = "weak-acid", amount = 20 },
+      { type = "fluid", name = "heavy-tar", amount = 10 },
+    },
+    results = {
+      { type = "item", name = "wood", amount = 5 }
     }
   }
 })

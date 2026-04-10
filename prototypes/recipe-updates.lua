@@ -13,13 +13,13 @@ local function set_recipe(recipe_name, enabled_or_not, energy_required, ingredie
   recipe.normal = nil
   recipe.expensive = nil
 end
-
+-- AUTOMATION
 set_recipe(
   "copper-cable",
   false,
   0.5,
   {
-    { type = "item", name = "iron-plate", amount = 2 },
+    { type = "item", name = "copper-plate", amount = 2 },
     { type = "fluid", name = "clean-water", amount = 30 }
   },
   {
@@ -71,6 +71,9 @@ set_recipe(
     { type = "item", name = "automation-science-pack", amount = 4 }
   }
 )
+
+
+-- LOGISTICS
 
 set_recipe(
   "inserter",
