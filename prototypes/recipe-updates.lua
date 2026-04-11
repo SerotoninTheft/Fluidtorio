@@ -327,6 +327,10 @@ data:extend
     }
   },
 
+
 })
 
+data.raw.recipe["solid-fuel-from-light-oil"].subgroup = "solid-fuel"
+data.raw.recipe["solid-fuel-from-heavy-oil"].subgroup = "solid-fuel"
+data.raw.recipe["solid-fuel-from-petroleum-gas"].subgroup = "solid-fuel"
 

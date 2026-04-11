@@ -1,3 +1,4 @@
+require("prototypes.item-groups")
 require("prototypes.fluids")
 require("prototypes.recipes")
 require("prototypes.recipe-updates")

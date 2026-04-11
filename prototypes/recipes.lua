@@ -499,7 +499,7 @@ data:extend({
     type = "recipe",
     name = "venting-oxygen",
     category = "chemistry",
-    subgroup = "raw-material",
+    subgroup = "venting",
     icons = {
       {
         icon = "__Fluidtorio__/graphics/icons/oxygen.png",
@@ -525,7 +525,7 @@ data:extend({
     type = "recipe",
     name = "venting-hydrogen",
     category = "chemistry",
-    subgroup = "raw-material",
+    subgroup = "venting",
     icons = {
       {
         icon = "__Fluidtorio__/graphics/icons/hydrogen.png",
@@ -551,7 +551,7 @@ data:extend({
     type = "recipe",
     name = "dumping-clean-water",
     category = "chemistry",
-    subgroup = "raw-material",
+    subgroup = "venting",
     icons = {
       {
         icon = "__Fluidtorio__/graphics/icons/clean-water.png",
@@ -577,7 +577,7 @@ data:extend({
     type = "recipe",
     name = "dumping-very-clean-water",
     category = "chemistry",
-    subgroup = "raw-material",
+    subgroup = "venting",
     icons = {
       {
         icon = "__Fluidtorio__/graphics/icons/very-clean-water.png",
@@ -603,7 +603,7 @@ data:extend({
     type = "recipe",
     name = "venting-steam",
     category = "chemistry",
-    subgroup = "raw-material",
+    subgroup = "venting",
     icons = {
       {
         icon = "__base__/graphics/icons/fluid/steam.png",
@@ -629,7 +629,7 @@ data:extend({
     type = "recipe",
     name = "venting-nitrogen",
     category = "chemistry",
-    subgroup = "raw-material",
+    subgroup = "venting",
     icons = {
       {
         icon = "__Fluidtorio__/graphics/icons/nitrogen.png",
@@ -655,7 +655,7 @@ data:extend({
     type = "recipe",
     name = "venting-argon",
     category = "chemistry",
-    subgroup = "raw-material",
+    subgroup = "venting",
     icons = {
       {
         icon = "__Fluidtorio__/graphics/icons/argon.png",
@@ -677,6 +677,32 @@ data:extend({
     results = {
     }
   },
+  {
+    type = "recipe",
+    name = "wasting-solid-fuel",
+    category = "oil-processing",
+    subgroup = "venting",
+    icons = {
+      {
+        icon = "__base__/graphics/icons/solid-fuel.png",
+        icon_size = 64,
+        scale = 0.5,
+      },
+      {
+        icon = "__Fluidtorio__/graphics/icons/no-overlay.png",
+        icon_size = 64,
+        scale = 0.5,
+        shift = {0, 0}
+      }
+    },
+    enabled = true,
+    energy_required = 1,
+    ingredients = {
+      { type = "item", name = "solid-fuel", amount = 20 },
+    },
+    results = {
+    }
+  },
 
 
 
@@ -684,7 +710,7 @@ data:extend({
     type = "recipe",
     name = "solid-fuel-aromatics",
     category = "chemistry",
-    subgroup = "raw-material",
+    subgroup = "solid-fuel",
     icons = {
       {
         icon = "__base__/graphics/icons/solid-fuel.png",
@@ -711,7 +737,7 @@ data:extend({
     type = "recipe",
     name = "solid-fuel-ethylene",
     category = "chemistry",
-    subgroup = "raw-material",
+    subgroup = "solid-fuel",
     icons = {
       {
         icon = "__base__/graphics/icons/solid-fuel.png",
@@ -738,7 +764,7 @@ data:extend({
     type = "recipe",
     name = "solid-fuel-butadiene",
     category = "chemistry",
-    subgroup = "raw-material",
+    subgroup = "solid-fuel",
     icons = {
       {
         icon = "__base__/graphics/icons/solid-fuel.png",
@@ -765,7 +791,7 @@ data:extend({
     type = "recipe",
     name = "solid-fuel-xylene",
     category = "chemistry",
-    subgroup = "raw-material",
+    subgroup = "solid-fuel",
     icons = {
       {
         icon = "__base__/graphics/icons/solid-fuel.png",
@@ -792,7 +818,7 @@ data:extend({
     type = "recipe",
     name = "solid-fuel-toluene",
     category = "chemistry",
-    subgroup = "raw-material",
+    subgroup = "solid-fuel",
     icons = {
       {
         icon = "__base__/graphics/icons/solid-fuel.png",
@@ -819,7 +845,7 @@ data:extend({
     type = "recipe",
     name = "solid-fuel-benzene",
     category = "chemistry",
-    subgroup = "raw-material",
+    subgroup = "solid-fuel",
     icons = {
       {
         icon = "__base__/graphics/icons/solid-fuel.png",
@@ -846,7 +872,7 @@ data:extend({
     type = "recipe",
     name = "solid-fuel-ortho-xylene",
     category = "chemistry",
-    subgroup = "raw-material",
+    subgroup = "solid-fuel",
     icons = {
       {
         icon = "__base__/graphics/icons/solid-fuel.png",
@@ -873,7 +899,7 @@ data:extend({
     type = "recipe",
     name = "solid-fuel-meta-xylene",
     category = "chemistry",
-    subgroup = "raw-material",
+    subgroup = "solid-fuel",
     icons = {
       {
         icon = "__base__/graphics/icons/solid-fuel.png",
@@ -900,7 +926,7 @@ data:extend({
     type = "recipe",
     name = "solid-fuel-para-xylene",
     category = "chemistry",
-    subgroup = "raw-material",
+    subgroup = "solid-fuel",
     icons = {
       {
         icon = "__base__/graphics/icons/solid-fuel.png",
@@ -927,7 +953,7 @@ data:extend({
     type = "recipe",
     name = "solid-fuel-ethylene-oxide",
     category = "chemistry",
-    subgroup = "raw-material",
+    subgroup = "solid-fuel",
     icons = {
       {
         icon = "__base__/graphics/icons/solid-fuel.png",
@@ -954,7 +980,7 @@ data:extend({
     type = "recipe",
     name = "solid-fuel-monoethylene-glycol",
     category = "chemistry",
-    subgroup = "raw-material",
+    subgroup = "solid-fuel",
     icons = {
       {
         icon = "__base__/graphics/icons/solid-fuel.png",
@@ -981,7 +1007,7 @@ data:extend({
     type = "recipe",
     name = "solid-fuel-diethylene-glycol",
     category = "chemistry",
-    subgroup = "raw-material",
+    subgroup = "solid-fuel",
     icons = {
       {
         icon = "__base__/graphics/icons/solid-fuel.png",
@@ -1008,7 +1034,7 @@ data:extend({
     type = "recipe",
     name = "solid-fuel-triethylene-glycol",
     category = "chemistry",
-    subgroup = "raw-material",
+    subgroup = "solid-fuel",
     icons = {
       {
         icon = "__base__/graphics/icons/solid-fuel.png",
