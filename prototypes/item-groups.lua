@@ -18,4 +18,10 @@ data:extend
     group = "intermediate-products",
     order = "ac"
   },
+  {
+    type = "item-subgroup",
+    name = "oil-processing",
+    group = "intermediate-products",
+    order = "ac"
+  },
 })

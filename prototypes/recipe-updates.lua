@@ -293,7 +293,7 @@ data:extend
     },
     allow_productivity = true,
     icon = "__Fluidtorio__/graphics/icons/basic-oil-processing.png",
-    subgroup = "fluid-recipes",
+    subgroup = "oil-processing",
     order = "a[oil-processing]-a[basic-oil-processing]",
     main_product = ""
   },
@@ -333,7 +333,7 @@ data:extend
     type = "recipe",
     name = "light-oil-cracking",
     category = "chemistry",
-    subgroup = "raw-material",
+    subgroup = "oil-processing",
     icon = "__Fluidtorio__/graphics/icons/btx-aromatics.png",
     enabled = true,
     energy_required = 2,
