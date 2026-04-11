@@ -119,7 +119,7 @@ data:extend({
     {r=0.85,g=0.9,b=1.0}, {r=1.0,g=1.0,b=1.0}, 15, 200),
 
   make_fluid("oxygen", "a[fluid]-o[oxygen]",
-    {r=0.4,g=0.7,b=1.0}, {r=0.7,g=0.9,b=1.0}, 15, 200),
+    {r=0.7,g=0.7,b=0.9}, {r=1.0,g=0.9,b=0.9}, 15, 200),
 
   make_fluid("air", "a[fluid]-p[air]",
     {r=0.7,g=0.8,b=0.9}, {r=0.9,g=0.95,b=1.0}, 15, 100),
@@ -151,7 +151,7 @@ data:extend({
   make_fluid("butadiene", "a[fluid]-x[butadiene]",
     {r=0.75,g=0.75,b=0.75}, {r=0.95,g=0.95,b=0.95}, 15, 200),
 
-  make_fluid("btx-aromatics", "a[fluid]-y[btx-aromatics]",
+  make_fluid("BTX-aromatics", "a[fluid]-y[BTX-aromatics]",
     {r=0.6,g=0.4,b=0.2}, {r=0.8,g=0.6,b=0.3}, 25, 200),
 
   make_fluid("benzene", "a[fluid]-z[benzene]",
@@ -173,10 +173,10 @@ data:extend({
     {r=0.65,g=0.4,b=0.25}, {r=0.85,g=0.6,b=0.35}, 25, 200),
 
   make_fluid("metal-catalyst-solution", "a[fluid]-zf[metal-catalyst-solution]",
-    {r=0.7,g=0.7,b=0.5}, {r=0.9,g=0.9,b=0.7}, 25, 200),
+    {r=0.7,g=0.35,b=0.3}, {r=0.9,g=0.45,b=0.4}, 25, 200),
 
   make_fluid("cement-mix", "a[fluid]-zf[cement-mix]",
-    {r=0.7,g=0.7,b=0.5}, {r=0.9,g=0.9,b=0.7}, 25, 200),
+    {r=0.7,g=0.7,b=0.7}, {r=0.9,g=0.9,b=0.9}, 25, 200),
 
 
 })
