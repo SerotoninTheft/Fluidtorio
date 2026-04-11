@@ -304,7 +304,7 @@ data:extend
     category = "chemistry",
     subgroup = "fluid-recipes",
     order = "c[oil-products]-b[sulfuric-acid]",
-    energy_required = 2,
+    energy_required = 5,
     enabled = false,
     ingredients =
     {
