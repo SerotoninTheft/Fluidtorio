@@ -151,7 +151,7 @@ data:extend({
   make_fluid("butadiene", "a[fluid]-x[butadiene]",
     {r=0.75,g=0.75,b=0.75}, {r=0.95,g=0.95,b=0.95}, 15, 200),
 
-  make_fluid("BTX-aromatics", "a[fluid]-y[BTX-aromatics]",
+  make_fluid("btx-aromatics", "a[fluid]-y[BTX-aromatics]",
     {r=0.6,g=0.4,b=0.2}, {r=0.8,g=0.6,b=0.3}, 25, 200),
 
   make_fluid("benzene", "a[fluid]-z[benzene]",
@@ -188,7 +188,7 @@ data:extend({
     {r=0.65,g=0.4,b=0.25}, {r=0.85,g=0.6,b=0.35}, 25, 200),
 
   make_fluid("industrial-sealant", "a[fluid]-ze[industrial-sealant]",
-    {r=0.65,g=0.4,b=0.25}, {r=0.85,g=0.6,b=0.35}, 25, 200),
+    {r=0.25,g=0.1,b=0.05}, {r=0.35,g=0.2,b=0.15}, 25, 200),
 
   make_fluid("styrene", "a[fluid]-ze[styrene]",
     {r=0.65,g=0.4,b=0.25}, {r=0.85,g=0.6,b=0.35}, 25, 200),
