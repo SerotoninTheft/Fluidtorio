@@ -178,5 +178,12 @@ data:extend({
   make_fluid("cement-mix", "a[fluid]-zf[cement-mix]",
     {r=0.7,g=0.7,b=0.7}, {r=0.9,g=0.9,b=0.9}, 25, 200),
 
+  make_fluid("monoethylene-glycol", "a[fluid]-zc[monoethylene-glycol]",
+    {r=0.55,g=0.35,b=0.2}, {r=0.75,g=0.55,b=0.3}, 25, 200),
 
+  make_fluid("diethylene-glycol", "a[fluid]-zd[diethylene-glycol]",
+    {r=0.5,g=0.3,b=0.2}, {r=0.7,g=0.5,b=0.3}, 25, 200),
+
+  make_fluid("triethylene-glycol", "a[fluid]-ze[triethylene-glycol]",
+    {r=0.65,g=0.4,b=0.25}, {r=0.85,g=0.6,b=0.35}, 25, 200),
 })
