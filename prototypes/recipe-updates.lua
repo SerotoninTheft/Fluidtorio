@@ -294,7 +294,7 @@ data:extend
     allow_productivity = true,
     icon = "__Fluidtorio__/graphics/icons/basic-oil-processing.png",
     subgroup = "oil-processing",
-    order = "a[oil-processing]-a[basic-oil-processing]",
+    order = "a",
     main_product = ""
   },
 
@@ -302,8 +302,8 @@ data:extend
     type = "recipe",
     name = "sulfuric-acid",
     category = "chemistry",
-    subgroup = "fluid-recipes",
-    order = "c[oil-products]-b[sulfuric-acid]",
+    subgroup = "sulfur-processing",
+    order = "d",
     energy_required = 5,
     enabled = false,
     ingredients =
@@ -334,6 +334,7 @@ data:extend
     name = "light-oil-cracking",
     category = "chemistry",
     subgroup = "oil-processing",
+    order = "b",
     icon = "__Fluidtorio__/graphics/icons/btx-aromatics.png",
     enabled = true,
     energy_required = 2,
