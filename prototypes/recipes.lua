@@ -295,8 +295,44 @@ data:extend({
     },
     results = {
       { type = "fluid", name = "para-xylene", amount = 20 },
+      { type = "fluid", name = "meta-xylene", amount = 40 },
+      { type = "fluid", name = "ortho-xylene", amount = 40 },
+    }
+  },
+  {
+    type = "recipe",
+    name = "meta-xylene-separation",
+    category = "oil-processing",
+    subgroup = "raw-material",
+    icon = "__Fluidtorio__/graphics/icons/meta-xylene-separation.png",
+    enabled = true,
+    energy_required = 2,
+    ingredients = {
+      { type = "fluid", name = "meta-xylene", amount = 100 },
+      { type = "fluid", name = "metal-catalyst-solution", amount = 5 },
+    },
+    results = {
+      { type = "fluid", name = "para-xylene", amount = 60 },
       { type = "fluid", name = "meta-xylene", amount = 20 },
-      { type = "fluid", name = "ortho-xylene", amount = 1 },
+      { type = "fluid", name = "ortho-xylene", amount = 20 },
+    }
+  },
+  {
+    type = "recipe",
+    name = "ortho-xylene-separation",
+    category = "oil-processing",
+    subgroup = "raw-material",
+    icon = "__Fluidtorio__/graphics/icons/ortho-xylene-separation.png",
+    enabled = true,
+    energy_required = 2,
+    ingredients = {
+      { type = "fluid", name = "ortho-xylene", amount = 100 },
+      { type = "fluid", name = "metal-catalyst-solution", amount = 5 },
+    },
+    results = {
+      { type = "fluid", name = "para-xylene", amount = 60 },
+      { type = "fluid", name = "meta-xylene", amount = 20 },
+      { type = "fluid", name = "ortho-xylene", amount = 20 },
     }
   },
 })
