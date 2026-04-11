@@ -230,7 +230,6 @@ data:extend({
       { type = "fluid", name = "metal-catalyst-solution", amount = 50 }
     }
   },
-
   {
     type = "recipe",
     name = "water-electrolysis",
@@ -249,7 +248,6 @@ data:extend({
       { type = "item", name = "copper-plate", probability = 0.9, amount = 5 },
     }
   },
-
   {
     type = "recipe",
     name = "stage-2-water-purification",
@@ -266,7 +264,6 @@ data:extend({
       { type = "fluid", name = "water", amount = 2 },
     }
   },
-
   {
     type = "recipe",
     name = "stage-3-water-purification",
@@ -282,6 +279,24 @@ data:extend({
       { type = "fluid", name = "distilled-water", amount = 20 },
       { type = "fluid", name = "clean-water", amount = 20 },
       { type = "fluid", name = "water", amount = 1 },
+    }
+  },
+  {
+    type = "recipe",
+    name = "xylene-separation",
+    category = "oil-processing",
+    subgroup = "raw-material",
+    icon = "__Fluidtorio__/graphics/icons/xylene-separation.png",
+    enabled = true,
+    energy_required = 2,
+    ingredients = {
+      { type = "fluid", name = "xylene", amount = 100 },
+      { type = "fluid", name = "metal-catalyst-solution", amount = 5 },
+    },
+    results = {
+      { type = "fluid", name = "para-xylene", amount = 20 },
+      { type = "fluid", name = "meta-xylene", amount = 20 },
+      { type = "fluid", name = "ortho-xylene", amount = 1 },
     }
   },
 })
