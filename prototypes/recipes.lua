@@ -703,7 +703,32 @@ data:extend({
     results = {
     }
   },
-
+  {
+    type = "recipe",
+    name = "wasting-sulfur",
+    category = "oil-processing",
+    subgroup = "venting",
+    icons = {
+      {
+        icon = "__base__/graphics/icons/sulfur.png",
+        icon_size = 64,
+        scale = 0.5,
+      },
+      {
+        icon = "__Fluidtorio__/graphics/icons/no-overlay.png",
+        icon_size = 64,
+        scale = 0.5,
+        shift = {0, 0}
+      }
+    },
+    enabled = true,
+    energy_required = 1,
+    ingredients = {
+      { type = "item", name = "sulfur", amount = 20 },
+    },
+    results = {
+    }
+  },
 
 
   {
@@ -1058,4 +1083,141 @@ data:extend({
     }
   },
 
+
+
+  {
+    type = "recipe",
+    name = "petroleum-gas-cracking",
+    category = "chemistry",
+    subgroup = "raw-material",
+    icon = "__Fluidtorio__/graphics/icons/ethylene.png",
+    enabled = true,
+    energy_required = 2,
+    ingredients = {
+      { type = "fluid", name = "petroleum-gas", amount = 50 },
+      { type = "fluid", name = "steam", amount = 50 },
+    },
+    results = {
+      { type = "fluid", name = "butadiene", amount = 30 },
+      { type = "fluid", name = "ethylene", amount = 50 },
+    }
+  },
+  {
+    type = "recipe",
+    name = "industrial-sealant",
+    category = "chemistry",
+    subgroup = "raw-material",
+    icon = "__Fluidtorio__/graphics/icons/industrial-sealant.png",
+    enabled = true,
+    energy_required = 2,
+    ingredients = {
+      { type = "fluid", name = "styrene", amount = 20 },
+      { type = "fluid", name = "butadiene", amount = 20 },
+      { type = "item", name = "sulfur", amount = 1 },
+    },
+    results = {
+      { type = "fluid", name = "industrial-sealant", amount = 40 },
+    }
+  },
+  {
+    type = "recipe",
+    name = "styrene",
+    category = "chemistry",
+    subgroup = "raw-material",
+    icon = "__Fluidtorio__/graphics/icons/styrene.png",
+    enabled = true,
+    energy_required = 2,
+    ingredients = {
+      { type = "fluid", name = "ethylbenzene", amount = 40 },
+      { type = "fluid", name = "steam", amount = 40 },
+    },
+    results = {
+      { type = "fluid", name = "styrene", amount = 50 },
+      { type = "fluid", name = "hydrogen", amount = 30 },
+    }
+  },
+  {
+    type = "recipe",
+    name = "ethylbenzene",
+    category = "chemistry",
+    subgroup = "raw-material",
+    icon = "__Fluidtorio__/graphics/icons/ethylbenzene.png",
+    enabled = true,
+    energy_required = 2,
+    ingredients = {
+      { type = "fluid", name = "ethylene", amount = 25 },
+      { type = "fluid", name = "benzene", amount = 25 },
+      { type = "fluid", name = "metal-catalyst-solution", amount = 5 },
+    },
+    results = {
+      { type = "fluid", name = "ethylbenzene", amount = 50 },
+    }
+  },
+  {
+    type = "recipe",
+    name = "plastic-bar",
+    category = "chemistry",
+    subgroup = "raw-material",
+    icon = "__base__/graphics/icons/plastic-bar.png",
+    enabled = true,
+    energy_required = 2,
+    ingredients = {
+      { type = "fluid", name = "purified-terephthalic-acid", amount = 10 },
+      { type = "fluid", name = "monoethylene-glycol", amount = 10 },
+    },
+    results = {
+      { type = "item", name = "plastic-bar", amount = 5 },
+    }
+  },
+  {
+    type = "recipe",
+    name = "purified-terephthalic-acid",
+    category = "chemistry",
+    subgroup = "raw-material",
+    icon = "__Fluidtorio__/graphics/icons/purified-terephthalic-acid.png",
+    enabled = true,
+    energy_required = 2,
+    ingredients = {
+      { type = "fluid", name = "para-xylene", amount = 50 },
+      { type = "fluid", name = "dry-air", amount = 20 },
+      { type = "fluid", name = "weak-acid", amount = 20 },
+    },
+    results = {
+      { type = "fluid", name = "purified-terephthalic-acid", amount = 50 },
+    }
+  },
+  {
+    type = "recipe",
+    name = "ethylene-oxide-hydration",
+    category = "oil-processing",
+    subgroup = "raw-material",
+    icon = "__Fluidtorio__/graphics/icons/ethylene-oxide.png",
+    enabled = true,
+    energy_required = 1,
+    ingredients = {
+      { type = "fluid", name = "ethylene-oxide", amount = 100 },
+      { type = "fluid", name = "distilled-water", amount = 50 },
+    },
+    results = {
+      { type = "fluid", name = "monoethylene-glycol", amount = 50 },
+      { type = "fluid", name = "diethylene-glycol", amount = 25 },
+      { type = "fluid", name = "triethylene-glycol", amount = 25 },
+    }
+  },
+  {
+    type = "recipe",
+    name = "ethylene-oxide",
+    category = "chemistry",
+    subgroup = "raw-material",
+    icon = "__Fluidtorio__/graphics/icons/ethylene-oxide.png",
+    enabled = true,
+    energy_required = 2,
+    ingredients = {
+      { type = "fluid", name = "ethylene", amount = 50 },
+      { type = "fluid", name = "metal-catalyst-solution", amount = 5 },
+    },
+    results = {
+      { type = "fluid", name = "ethylene-oxide", amount = 50 },
+    }
+  },
 })

@@ -12,4 +12,10 @@ data:extend
     group = "intermediate-products",
     order = "ab"
   },
+  {
+    type = "item-subgroup",
+    name = "bad-recipes",
+    group = "intermediate-products",
+    order = "ac"
+  },
 })

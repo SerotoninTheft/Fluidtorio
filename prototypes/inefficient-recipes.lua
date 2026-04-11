@@ -4,6 +4,7 @@ data:extend({
     name = "inefficient-copper-cable",
     icon = "__Fluidtorio__/graphics/icons/bad-copper-cable.png",
     category = "crafting",
+    subgroup = "bad-recipes",
     enabled = false,
     energy_required = 1,
     ingredients = {
@@ -18,6 +19,7 @@ data:extend({
     name = "inefficient-electronic-circuit",
     icon = "__Fluidtorio__/graphics/icons/bad-electronic-circuit.png",
     category = "crafting",
+    subgroup = "bad-recipes",
     enabled = false,
     energy_required = 1,
     ingredients = {
@@ -33,6 +35,7 @@ data:extend({
     name = "inefficient-iron-gear-wheel",
     icon = "__Fluidtorio__/graphics/icons/bad-iron-gear-wheel.png",
     category = "crafting",
+    subgroup = "bad-recipes",
     enabled = true,
     energy_required = 1,
     ingredients = {
@@ -47,6 +50,7 @@ data:extend({
     name = "inefficient-automation-science-pack",
     icon = "__Fluidtorio__/graphics/icons/bad-automation-science-pack.png",
     category = "crafting",
+    subgroup = "bad-recipes",
     enabled = false,
     energy_required = 10,
     ingredients = {
@@ -62,6 +66,7 @@ data:extend({
     name = "inefficient-transport-belt",
     icon = "__Fluidtorio__/graphics/icons/bad-transport-belt.png",
     category = "crafting",
+    subgroup = "bad-recipes",
     enabled = true,
     energy_required = 1,
     ingredients = {
@@ -77,6 +82,7 @@ data:extend({
     name = "inefficient-inserter",
     icon = "__Fluidtorio__/graphics/icons/bad-inserter.png",
     category = "crafting",
+    subgroup = "bad-recipes",
     enabled = false,
     energy_required = 1,
     ingredients = {

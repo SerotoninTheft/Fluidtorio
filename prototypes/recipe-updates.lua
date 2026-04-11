@@ -279,7 +279,7 @@ data:extend
     name = "basic-oil-processing",
     category = "oil-processing",
     enabled = false,
-    energy_required = 3,
+    energy_required = 2,
     ingredients =
     {
       {type = "fluid", name = "crude-oil", amount = 100},
@@ -327,6 +327,25 @@ data:extend
     }
   },
 
+
+
+  {
+    type = "recipe",
+    name = "light-oil-cracking",
+    category = "chemistry",
+    subgroup = "raw-material",
+    icon = "__Fluidtorio__/graphics/icons/btx-aromatics.png",
+    enabled = true,
+    energy_required = 2,
+    ingredients = {
+      { type = "fluid", name = "light-oil", amount = 40 },
+      { type = "fluid", name = "steam", amount = 50 },
+    },
+    results = {
+      { type = "fluid", name = "btx-aromatics", amount = 50 },
+      { type = "fluid", name = "ethylene", amount = 10 },
+    }
+  },
 
 })
 
