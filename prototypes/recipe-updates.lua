@@ -292,7 +292,7 @@ data:extend
       {type = "item", name = "sulfur", amount = 4},
     },
     allow_productivity = true,
-    icon = "__base__/graphics/icons/fluid/basic-oil-processing.png",
+    icon = "__Fluidtorio__/graphics/icons/basic-oil-processing.png",
     subgroup = "fluid-recipes",
     order = "a[oil-processing]-a[basic-oil-processing]",
     main_product = ""
@@ -344,7 +344,8 @@ data:extend
     results = {
       { type = "fluid", name = "btx-aromatics", amount = 50 },
       { type = "fluid", name = "ethylene", amount = 10 },
-    }
+    },
+    allow_productivity = true,
   },
 
 })

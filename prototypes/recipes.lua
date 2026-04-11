@@ -1100,7 +1100,8 @@ data:extend({
     results = {
       { type = "fluid", name = "butadiene", amount = 30 },
       { type = "fluid", name = "ethylene", amount = 50 },
-    }
+    },
+    allow_productivity = true,
   },
   {
     type = "recipe",
@@ -1117,7 +1118,8 @@ data:extend({
     },
     results = {
       { type = "fluid", name = "industrial-sealant", amount = 40 },
-    }
+    },
+    allow_productivity = true,
   },
   {
     type = "recipe",
@@ -1134,7 +1136,8 @@ data:extend({
     results = {
       { type = "fluid", name = "styrene", amount = 50 },
       { type = "fluid", name = "hydrogen", amount = 30 },
-    }
+    },
+    allow_productivity = true,
   },
   {
     type = "recipe",
@@ -1151,7 +1154,8 @@ data:extend({
     },
     results = {
       { type = "fluid", name = "ethylbenzene", amount = 50 },
-    }
+    },
+    allow_productivity = true,
   },
   {
     type = "recipe",
@@ -1167,7 +1171,8 @@ data:extend({
     },
     results = {
       { type = "item", name = "plastic-bar", amount = 5 },
-    }
+    },
+    allow_productivity = true,
   },
   {
     type = "recipe",
@@ -1184,7 +1189,8 @@ data:extend({
     },
     results = {
       { type = "fluid", name = "purified-terephthalic-acid", amount = 50 },
-    }
+    },
+    allow_productivity = true,
   },
   {
     type = "recipe",
@@ -1202,7 +1208,8 @@ data:extend({
       { type = "fluid", name = "monoethylene-glycol", amount = 50 },
       { type = "fluid", name = "diethylene-glycol", amount = 25 },
       { type = "fluid", name = "triethylene-glycol", amount = 25 },
-    }
+    },
+    allow_productivity = true,
   },
   {
     type = "recipe",
@@ -1218,6 +1225,7 @@ data:extend({
     },
     results = {
       { type = "fluid", name = "ethylene-oxide", amount = 50 },
-    }
+    },
+    allow_productivity = true,
   },
 })
