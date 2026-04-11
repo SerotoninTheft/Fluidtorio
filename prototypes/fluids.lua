@@ -186,4 +186,17 @@ data:extend({
 
   make_fluid("triethylene-glycol", "a[fluid]-ze[triethylene-glycol]",
     {r=0.65,g=0.4,b=0.25}, {r=0.85,g=0.6,b=0.35}, 25, 200),
+
+  make_fluid("industrial-sealant", "a[fluid]-ze[industrial-sealant]",
+    {r=0.65,g=0.4,b=0.25}, {r=0.85,g=0.6,b=0.35}, 25, 200),
+
+  make_fluid("styrene", "a[fluid]-ze[styrene]",
+    {r=0.65,g=0.4,b=0.25}, {r=0.85,g=0.6,b=0.35}, 25, 200),
+
+  make_fluid("ethylbenzene", "a[fluid]-ze[ethylbenzene]",
+    {r=0.65,g=0.4,b=0.25}, {r=0.85,g=0.6,b=0.35}, 25, 200),
+
+  make_fluid("purified-terephthalic-acid", "a[fluid]-ze[purified-terephthalic-acid]",
+    {r=0.65,g=0.4,b=0.25}, {r=0.85,g=0.6,b=0.35}, 25, 200),
+
 })
