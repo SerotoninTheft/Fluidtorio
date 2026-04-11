@@ -436,4 +436,600 @@ data:extend({
     }
   },
   
+
+
+  {
+    type = "recipe",
+    name = "sulfur-dioxide",
+    category = "chemistry",
+    subgroup = "raw-material",
+    icon = "__Fluidtorio__/graphics/icons/sulfur-dioxide.png",
+    enabled = true,
+    energy_required = 5,
+    ingredients = {
+      { type = "fluid", name = "dry-air", amount = 30 },
+      { type = "fluid", name = "oxygen", amount = 50 },
+      { type = "item", name = "sulfur", amount = 10 },
+    },
+    results = {
+      { type = "fluid", name = "sulfur-dioxide", amount = 100 },
+      { type = "fluid", name = "air", amount = 40, ignored_by_productivity = 40 },
+    },
+    allow_productivity = true,
+  },
+  {
+    type = "recipe",
+    name = "sulfur-trioxide",
+    category = "chemistry",
+    subgroup = "raw-material",
+    icon = "__Fluidtorio__/graphics/icons/sulfur-trioxide.png",
+    enabled = true,
+    energy_required = 5,
+    ingredients = {
+      { type = "fluid", name = "oxygen", amount = 20 },
+      { type = "fluid", name = "metal-catalyst-solution", amount = 50},
+      { type = "fluid", name = "sulfur-dioxide", amount = 100 },
+    },
+    results = {
+      { type = "fluid", name = "sulfur-trioxide", amount = 100 },
+      { type = "fluid", name = "metal-catalyst-solution", amount = 45, ignored_by_productivity = 45 },
+      { type = "fluid", name = "sulfuric-acid", amount = 5},
+    },
+    allow_productivity = true,
+  },
+  {
+    type = "recipe",
+    name = "oleum",
+    category = "chemistry",
+    subgroup = "raw-material",
+    icon = "__Fluidtorio__/graphics/icons/oleum.png",
+    enabled = true,
+    energy_required = 5,
+    ingredients = {
+      { type = "fluid", name = "sulfur-trioxide", amount = 100 },
+      { type = "fluid", name = "sulfuric-acid", amount = 100 },
+    },
+    results = {
+      { type = "fluid", name = "oleum", amount = 200 },
+    }
+  },
+
+
+  {
+    type = "recipe",
+    name = "venting-oxygen",
+    category = "chemistry",
+    subgroup = "raw-material",
+    icons = {
+      {
+        icon = "__Fluidtorio__/graphics/icons/oxygen.png",
+        icon_size = 64,
+        scale = 0.5,
+      },
+      {
+        icon = "__Fluidtorio__/graphics/icons/no-overlay.png",
+        icon_size = 64,
+        scale = 0.5,
+        shift = {0, 0}
+      }
+    },
+    enabled = true,
+    energy_required = 1,
+    ingredients = {
+      { type = "fluid", name = "oxygen", amount = 100 },
+    },
+    results = {
+    }
+  },
+  {
+    type = "recipe",
+    name = "venting-hydrogen",
+    category = "chemistry",
+    subgroup = "raw-material",
+    icons = {
+      {
+        icon = "__Fluidtorio__/graphics/icons/hydrogen.png",
+        icon_size = 64,
+        scale = 0.5,
+      },
+      {
+        icon = "__Fluidtorio__/graphics/icons/no-overlay.png",
+        icon_size = 64,
+        scale = 0.5,
+        shift = {0, 0}
+      }
+    },
+    enabled = true,
+    energy_required = 1,
+    ingredients = {
+      { type = "fluid", name = "hydrogen", amount = 100 },
+    },
+    results = {
+    }
+  },
+  {
+    type = "recipe",
+    name = "dumping-clean-water",
+    category = "chemistry",
+    subgroup = "raw-material",
+    icons = {
+      {
+        icon = "__Fluidtorio__/graphics/icons/clean-water.png",
+        icon_size = 64,
+        scale = 0.5,
+      },
+      {
+        icon = "__Fluidtorio__/graphics/icons/no-overlay.png",
+        icon_size = 64,
+        scale = 0.5,
+        shift = {0, 0}
+      }
+    },
+    enabled = true,
+    energy_required = 1,
+    ingredients = {
+      { type = "fluid", name = "clean-water", amount = 100 },
+    },
+    results = {
+    }
+  },
+  {
+    type = "recipe",
+    name = "dumping-very-clean-water",
+    category = "chemistry",
+    subgroup = "raw-material",
+    icons = {
+      {
+        icon = "__Fluidtorio__/graphics/icons/very-clean-water.png",
+        icon_size = 64,
+        scale = 0.5,
+      },
+      {
+        icon = "__Fluidtorio__/graphics/icons/no-overlay.png",
+        icon_size = 64,
+        scale = 0.5,
+        shift = {0, 0}
+      }
+    },
+    enabled = true,
+    energy_required = 1,
+    ingredients = {
+      { type = "fluid", name = "very-clean-water", amount = 100 },
+    },
+    results = {
+    }
+  },
+  {
+    type = "recipe",
+    name = "venting-steam",
+    category = "chemistry",
+    subgroup = "raw-material",
+    icons = {
+      {
+        icon = "__base__/graphics/icons/fluid/steam.png",
+        icon_size = 64,
+        scale = 0.5,
+      },
+      {
+        icon = "__Fluidtorio__/graphics/icons/no-overlay.png",
+        icon_size = 64,
+        scale = 0.5,
+        shift = {0, 0}
+      }
+    },
+    enabled = true,
+    energy_required = 1,
+    ingredients = {
+      { type = "fluid", name = "steam", amount = 100 },
+    },
+    results = {
+    }
+  },
+  {
+    type = "recipe",
+    name = "venting-nitrogen",
+    category = "chemistry",
+    subgroup = "raw-material",
+    icons = {
+      {
+        icon = "__Fluidtorio__/graphics/icons/nitrogen.png",
+        icon_size = 64,
+        scale = 0.5,
+      },
+      {
+        icon = "__Fluidtorio__/graphics/icons/no-overlay.png",
+        icon_size = 64,
+        scale = 0.5,
+        shift = {0, 0}
+      }
+    },
+    enabled = true,
+    energy_required = 1,
+    ingredients = {
+      { type = "fluid", name = "nitrogen", amount = 100 },
+    },
+    results = {
+    }
+  },
+  {
+    type = "recipe",
+    name = "venting-argon",
+    category = "chemistry",
+    subgroup = "raw-material",
+    icons = {
+      {
+        icon = "__Fluidtorio__/graphics/icons/argon.png",
+        icon_size = 64,
+        scale = 0.5,
+      },
+      {
+        icon = "__Fluidtorio__/graphics/icons/no-overlay.png",
+        icon_size = 64,
+        scale = 0.5,
+        shift = {0, 0}
+      }
+    },
+    enabled = true,
+    energy_required = 1,
+    ingredients = {
+      { type = "fluid", name = "argon", amount = 100 },
+    },
+    results = {
+    }
+  },
+
+
+
+  {
+    type = "recipe",
+    name = "solid-fuel-aromatics",
+    category = "chemistry",
+    subgroup = "raw-material",
+    icons = {
+      {
+        icon = "__base__/graphics/icons/solid-fuel.png",
+        icon_size = 64,
+        scale = 0.5,
+      },
+      {
+        icon = "__Fluidtorio__/graphics/icons/btx-aromatics.png",
+        icon_size = 64,
+        scale = 0.3,
+        shift = {-10,-10}
+      }
+    },
+    enabled = true,
+    energy_required = 0.2,
+    ingredients = {
+      { type = "fluid", name = "btx-aromatics", amount = 20 },
+    },
+    results = {
+      { type = "item", name = "solid-fuel", amount = 1 },
+    }
+  },
+  {
+    type = "recipe",
+    name = "solid-fuel-ethylene",
+    category = "chemistry",
+    subgroup = "raw-material",
+    icons = {
+      {
+        icon = "__base__/graphics/icons/solid-fuel.png",
+        icon_size = 64,
+        scale = 0.5,
+      },
+      {
+        icon = "__Fluidtorio__/graphics/icons/ethylene.png",
+        icon_size = 64,
+        scale = 0.3,
+        shift = {-10,-10}
+      }
+    },
+    enabled = true,
+    energy_required = 0.2,
+    ingredients = {
+      { type = "fluid", name = "ethylene", amount = 20 },
+    },
+    results = {
+      { type = "item", name = "solid-fuel", amount = 1 },
+    }
+  },
+  {
+    type = "recipe",
+    name = "solid-fuel-butadiene",
+    category = "chemistry",
+    subgroup = "raw-material",
+    icons = {
+      {
+        icon = "__base__/graphics/icons/solid-fuel.png",
+        icon_size = 64,
+        scale = 0.5,
+      },
+      {
+        icon = "__Fluidtorio__/graphics/icons/butadiene.png",
+        icon_size = 64,
+        scale = 0.3,
+        shift = {-10,-10}
+      }
+    },
+    enabled = true,
+    energy_required = 0.2,
+    ingredients = {
+      { type = "fluid", name = "butadiene", amount = 20 },
+    },
+    results = {
+      { type = "item", name = "solid-fuel", amount = 1 },
+    }
+  },
+  {
+    type = "recipe",
+    name = "solid-fuel-xylene",
+    category = "chemistry",
+    subgroup = "raw-material",
+    icons = {
+      {
+        icon = "__base__/graphics/icons/solid-fuel.png",
+        icon_size = 64,
+        scale = 0.5,
+      },
+      {
+        icon = "__Fluidtorio__/graphics/icons/xylene.png",
+        icon_size = 64,
+        scale = 0.3,
+        shift = {-10,-10}
+      }
+    },
+    enabled = true,
+    energy_required = 0.2,
+    ingredients = {
+      { type = "fluid", name = "xylene", amount = 20 },
+    },
+    results = {
+      { type = "item", name = "solid-fuel", amount = 1 },
+    }
+  },
+  {
+    type = "recipe",
+    name = "solid-fuel-toluene",
+    category = "chemistry",
+    subgroup = "raw-material",
+    icons = {
+      {
+        icon = "__base__/graphics/icons/solid-fuel.png",
+        icon_size = 64,
+        scale = 0.5,
+      },
+      {
+        icon = "__Fluidtorio__/graphics/icons/toluene.png",
+        icon_size = 64,
+        scale = 0.3,
+        shift = {-10,-10}
+      }
+    },
+    enabled = true,
+    energy_required = 0.2,
+    ingredients = {
+      { type = "fluid", name = "toluene", amount = 20 },
+    },
+    results = {
+      { type = "item", name = "solid-fuel", amount = 1 },
+    }
+  },
+  {
+    type = "recipe",
+    name = "solid-fuel-benzene",
+    category = "chemistry",
+    subgroup = "raw-material",
+    icons = {
+      {
+        icon = "__base__/graphics/icons/solid-fuel.png",
+        icon_size = 64,
+        scale = 0.5,
+      },
+      {
+        icon = "__Fluidtorio__/graphics/icons/benzene.png",
+        icon_size = 64,
+        scale = 0.3,
+        shift = {-10,-10}
+      }
+    },
+    enabled = true,
+    energy_required = 0.2,
+    ingredients = {
+      { type = "fluid", name = "benzene", amount = 20 },
+    },
+    results = {
+      { type = "item", name = "solid-fuel", amount = 1 },
+    }
+  },
+  {
+    type = "recipe",
+    name = "solid-fuel-ortho-xylene",
+    category = "chemistry",
+    subgroup = "raw-material",
+    icons = {
+      {
+        icon = "__base__/graphics/icons/solid-fuel.png",
+        icon_size = 64,
+        scale = 0.5,
+      },
+      {
+        icon = "__Fluidtorio__/graphics/icons/ortho-xylene.png",
+        icon_size = 64,
+        scale = 0.3,
+        shift = {-10,-10}
+      }
+    },
+    enabled = true,
+    energy_required = 0.2,
+    ingredients = {
+      { type = "fluid", name = "ortho-xylene", amount = 20 },
+    },
+    results = {
+      { type = "item", name = "solid-fuel", amount = 1 },
+    }
+  },
+  {
+    type = "recipe",
+    name = "solid-fuel-meta-xylene",
+    category = "chemistry",
+    subgroup = "raw-material",
+    icons = {
+      {
+        icon = "__base__/graphics/icons/solid-fuel.png",
+        icon_size = 64,
+        scale = 0.5,
+      },
+      {
+        icon = "__Fluidtorio__/graphics/icons/meta-xylene.png",
+        icon_size = 64,
+        scale = 0.3,
+        shift = {-10,-10}
+      }
+    },
+    enabled = true,
+    energy_required = 0.2,
+    ingredients = {
+      { type = "fluid", name = "meta-xylene", amount = 20 },
+    },
+    results = {
+      { type = "item", name = "solid-fuel", amount = 1 },
+    }
+  },
+  {
+    type = "recipe",
+    name = "solid-fuel-para-xylene",
+    category = "chemistry",
+    subgroup = "raw-material",
+    icons = {
+      {
+        icon = "__base__/graphics/icons/solid-fuel.png",
+        icon_size = 64,
+        scale = 0.5,
+      },
+      {
+        icon = "__Fluidtorio__/graphics/icons/para-xylene.png",
+        icon_size = 64,
+        scale = 0.3,
+        shift = {-10,-10}
+      }
+    },
+    enabled = true,
+    energy_required = 0.2,
+    ingredients = {
+      { type = "fluid", name = "para-xylene", amount = 20 },
+    },
+    results = {
+      { type = "item", name = "solid-fuel", amount = 1 },
+    }
+  },
+  {
+    type = "recipe",
+    name = "solid-fuel-ethylene-oxide",
+    category = "chemistry",
+    subgroup = "raw-material",
+    icons = {
+      {
+        icon = "__base__/graphics/icons/solid-fuel.png",
+        icon_size = 64,
+        scale = 0.5,
+      },
+      {
+        icon = "__Fluidtorio__/graphics/icons/ethylene-oxide.png",
+        icon_size = 64,
+        scale = 0.3,
+        shift = {-10,-10}
+      }
+    },
+    enabled = true,
+    energy_required = 0.2,
+    ingredients = {
+      { type = "fluid", name = "ethylene-oxide", amount = 20 },
+    },
+    results = {
+      { type = "item", name = "solid-fuel", amount = 1 },
+    }
+  },
+  {
+    type = "recipe",
+    name = "solid-fuel-monoethylene-glycol",
+    category = "chemistry",
+    subgroup = "raw-material",
+    icons = {
+      {
+        icon = "__base__/graphics/icons/solid-fuel.png",
+        icon_size = 64,
+        scale = 0.5,
+      },
+      {
+        icon = "__Fluidtorio__/graphics/icons/monoethylene-glycol.png",
+        icon_size = 64,
+        scale = 0.3,
+        shift = {-10,-10}
+      }
+    },
+    enabled = true,
+    energy_required = 0.2,
+    ingredients = {
+      { type = "fluid", name = "monoethylene-glycol", amount = 20 },
+    },
+    results = {
+      { type = "item", name = "solid-fuel", amount = 1 },
+    }
+  },
+  {
+    type = "recipe",
+    name = "solid-fuel-diethylene-glycol",
+    category = "chemistry",
+    subgroup = "raw-material",
+    icons = {
+      {
+        icon = "__base__/graphics/icons/solid-fuel.png",
+        icon_size = 64,
+        scale = 0.5,
+      },
+      {
+        icon = "__Fluidtorio__/graphics/icons/diethylene-glycol.png",
+        icon_size = 64,
+        scale = 0.3,
+        shift = {-10,-10}
+      }
+    },
+    enabled = true,
+    energy_required = 0.2,
+    ingredients = {
+      { type = "fluid", name = "diethylene-glycol", amount = 20 },
+    },
+    results = {
+      { type = "item", name = "solid-fuel", amount = 1 },
+    }
+  },
+  {
+    type = "recipe",
+    name = "solid-fuel-triethylene-glycol",
+    category = "chemistry",
+    subgroup = "raw-material",
+    icons = {
+      {
+        icon = "__base__/graphics/icons/solid-fuel.png",
+        icon_size = 64,
+        scale = 0.5,
+      },
+      {
+        icon = "__Fluidtorio__/graphics/icons/triethylene-glycol.png",
+        icon_size = 64,
+        scale = 0.3,
+        shift = {-10,-10}
+      }
+    },
+    enabled = true,
+    energy_required = 0.2,
+    ingredients = {
+      { type = "fluid", name = "triethylene-glycol", amount = 20 },
+    },
+    results = {
+      { type = "item", name = "solid-fuel", amount = 1 },
+    }
+  },
+
 })

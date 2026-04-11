@@ -297,4 +297,36 @@ data:extend
     order = "a[oil-processing]-a[basic-oil-processing]",
     main_product = ""
   },
+
+  {
+    type = "recipe",
+    name = "sulfuric-acid",
+    category = "chemistry",
+    subgroup = "fluid-recipes",
+    order = "c[oil-products]-b[sulfuric-acid]",
+    energy_required = 2,
+    enabled = false,
+    ingredients =
+    {
+      {type = "fluid", name = "oleum", amount = 200},
+      {type = "fluid", name = "distilled-water", amount = 50},
+    },
+    results =
+    {
+      {type = "fluid", name = "sulfuric-acid", amount = 300},
+      {type = "fluid", name = "steam", amount = 100},
+    },
+    allow_productivity = true,
+    icon = "__base__/graphics/icons/fluid/sulfuric-acid.png",
+    crafting_machine_tint =
+    {
+      primary = {r = 1.000, g = 0.958, b = 0.000, a = 1.000}, -- #fff400ff
+      secondary = {r = 1.000, g = 0.852, b = 0.172, a = 1.000}, -- #ffd92bff
+      tertiary = {r = 0.876, g = 0.869, b = 0.597, a = 1.000}, -- #dfdd98ff
+      quaternary = {r = 0.969, g = 1.000, b = 0.019, a = 1.000}, -- #f7ff04ff
+    }
+  },
+
 })
+
+

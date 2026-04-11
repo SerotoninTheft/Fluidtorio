@@ -47,6 +47,8 @@ add_recipe_unlock("automation-science-pack", "inefficient-automation-science-pac
 
 add_recipe_unlock("logistic-science-pack", "chemical-plant")
 remove_recipe_unlock("oil-processing", "chemical-plant")
+remove_recipe_unlock("sulfur-processing", "sulfur")
+
 
 table.insert(data.raw.technology["logistic-science-pack"].prerequisites, "efficient-fluid-logistics")
 table.insert(data.raw.technology["logistic-science-pack"].prerequisites, "efficient-fluid-recipes")
