@@ -1191,7 +1191,7 @@ data:extend({
     name = "ethylene-oxide-hydration",
     category = "oil-processing",
     subgroup = "raw-material",
-    icon = "__Fluidtorio__/graphics/icons/ethylene-oxide.png",
+    icon = "__Fluidtorio__/graphics/icons/ethylene-oxide-hydration.png",
     enabled = true,
     energy_required = 1,
     ingredients = {
