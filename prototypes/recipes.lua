@@ -16,7 +16,8 @@ data:extend({
     },
     results = {
       { type = "fluid", name = "heavy-tar", amount = 50 }
-    }
+    },
+    allow_productivity = true,
   },
   {
     type = "recipe",
@@ -32,7 +33,8 @@ data:extend({
     },
     results = {
       { type = "fluid", name = "weak-acid", amount = 50 }
-    }
+    },
+    allow_productivity = true,
   },
   {
     type = "recipe",
@@ -48,7 +50,8 @@ data:extend({
     },
     results = {
       { type = "fluid", name = "bioslurry", amount = 50 }
-    }
+    },
+    allow_productivity = true,
   },
   {
     type = "recipe",
@@ -81,7 +84,8 @@ data:extend({
     },
     results = {
       { type = "fluid", name = "mineral-water", amount = 50 }
-    }
+    },
+    allow_productivity = true,
   },
   {
     type = "recipe",
@@ -98,7 +102,8 @@ data:extend({
     },
     results = {
       { type = "fluid", name = "light-lubricant", amount = 50 }
-    }
+    },
+    allow_productivity = true,
   }
 })
 
@@ -139,7 +144,8 @@ data:extend({
     },
     results = {
       { type = "fluid", name = "limewater", amount = 100 }
-    }
+    },
+    allow_productivity = true,
   },
   {
     type = "recipe",
@@ -154,7 +160,8 @@ data:extend({
     },
     results = {
       { type = "fluid", name = "basic-solvent", amount = 50 }
-    }
+    },
+    allow_productivity = true,
   },
   {
     type = "recipe",
@@ -170,7 +177,8 @@ data:extend({
     },
     results = {
       { type = "fluid", name = "mineral-slurry", amount = 100 }
-    }
+    },
+    allow_productivity = true,
   },
   {
     type = "recipe",
@@ -186,7 +194,8 @@ data:extend({
     },
     results = {
       { type = "fluid", name = "weak-sealant", amount = 50 }
-    }
+    },
+    allow_productivity = true,
   },
   {
     type = "recipe",
@@ -201,7 +210,8 @@ data:extend({
     },
     results = {
       { type = "item", name = "wood", amount = 5 }
-    }
+    },
+    allow_productivity = true,
   },
 })
 
@@ -228,7 +238,8 @@ data:extend({
     },
     results = {
       { type = "fluid", name = "metal-catalyst-solution", amount = 50 }
-    }
+    },
+    allow_productivity = true,
   },
   {
     type = "recipe",
@@ -297,6 +308,63 @@ data:extend({
       { type = "fluid", name = "para-xylene", amount = 20 },
       { type = "fluid", name = "meta-xylene", amount = 40 },
       { type = "fluid", name = "ortho-xylene", amount = 40 },
+    },
+    allow_productivity = true,
+  },
+  {
+    type = "recipe",
+    name = "aromatic-separation",
+    category = "oil-processing",
+    subgroup = "raw-material",
+    icon = "__Fluidtorio__/graphics/icons/aromatic-separation.png",
+    enabled = true,
+    energy_required = 2,
+    ingredients = {
+      { type = "fluid", name = "btx-aromatics", amount = 100 },
+    },
+    results = {
+      { type = "fluid", name = "benzene", amount = 30 },
+      { type = "fluid", name = "toluene", amount = 60 },
+      { type = "fluid", name = "xylene", amount = 30 },
+    },
+    allow_productivity = true,
+  },
+  {
+    type = "recipe",
+    name = "toluene-separation",
+    category = "chemistry",
+    subgroup = "raw-material",
+    icon = "__Fluidtorio__/graphics/icons/toluene-separation.png",
+    enabled = true,
+    energy_required = 2,
+    ingredients = {
+      { type = "fluid", name = "toluene", amount = 60 },
+      { type = "fluid", name = "hydrogen", amount = 15 },
+      { type = "fluid", name = "metal-catalyst-solution", amount = 10 },
+    },
+    results = {
+      { type = "fluid", name = "benzene", amount = 50 },
+      { type = "fluid", name = "xylene", amount = 50 },
+      { type = "fluid", name = "metal-catalyst-solution", amount = 8 },
+    },
+    allow_productivity = true,
+  },
+  {
+    type = "recipe",
+    name = "ortho-xylene-separation",
+    category = "oil-processing",
+    subgroup = "raw-material",
+    icon = "__Fluidtorio__/graphics/icons/ortho-xylene-separation.png",
+    enabled = true,
+    energy_required = 2,
+    ingredients = {
+      { type = "fluid", name = "ortho-xylene", amount = 100 },
+      { type = "fluid", name = "metal-catalyst-solution", amount = 5 },
+    },
+    results = {
+      { type = "fluid", name = "para-xylene", amount = 60 },
+      { type = "fluid", name = "meta-xylene", amount = 20 },
+      { type = "fluid", name = "ortho-xylene", amount = 20 },
     }
   },
   {
@@ -317,22 +385,55 @@ data:extend({
       { type = "fluid", name = "ortho-xylene", amount = 20 },
     }
   },
+
+
   {
     type = "recipe",
-    name = "ortho-xylene-separation",
-    category = "oil-processing",
+    name = "air-intake",
+    category = "crafting-with-fluid",
     subgroup = "raw-material",
-    icon = "__Fluidtorio__/graphics/icons/ortho-xylene-separation.png",
+    icon = "__Fluidtorio__/graphics/icons/air.png",
     enabled = true,
     energy_required = 2,
     ingredients = {
-      { type = "fluid", name = "ortho-xylene", amount = 100 },
-      { type = "fluid", name = "metal-catalyst-solution", amount = 5 },
     },
     results = {
-      { type = "fluid", name = "para-xylene", amount = 60 },
-      { type = "fluid", name = "meta-xylene", amount = 20 },
-      { type = "fluid", name = "ortho-xylene", amount = 20 },
+      { type = "fluid", name = "air", amount = 50 },
     }
   },
+  {
+    type = "recipe",
+    name = "air-drying",
+    category = "chemistry",
+    subgroup = "raw-material",
+    icon = "__Fluidtorio__/graphics/icons/dry-air.png",
+    enabled = true,
+    energy_required = 1,
+    ingredients = {
+      { type = "fluid", name = "air", amount = 50 },
+    },
+    results = {
+      { type = "fluid", name = "dry-air", amount = 15 },
+      { type = "fluid", name = "air", amount = 25 },
+    }
+  },
+  {
+    type = "recipe",
+    name = "air-separation",
+    category = "chemistry",
+    subgroup = "raw-material",
+    icon = "__Fluidtorio__/graphics/icons/air-separation.png",
+    enabled = true,
+    energy_required = 5,
+    ingredients = {
+      { type = "fluid", name = "dry-air", amount = 100 },
+      { type = "fluid", name = "metal-catalyst-solution", amount = 10 },
+    },
+    results = {
+      { type = "fluid", name = "nitrogen", amount = 78 },
+      { type = "fluid", name = "oxygen", amount = 21 },
+      { type = "fluid", name = "argon", amount = 1 },
+    }
+  },
+  
 })

@@ -272,3 +272,29 @@ set_recipe(
     { type = "item", name = "passive-provider-chest", amount = 1 }
   }
 )
+data:extend
+({
+  {
+    type = "recipe",
+    name = "basic-oil-processing",
+    category = "oil-processing",
+    enabled = false,
+    energy_required = 3,
+    ingredients =
+    {
+      {type = "fluid", name = "crude-oil", amount = 100},
+      {type = "fluid", name = "steam", amount = 30}
+    },
+    results =
+    {
+      {type = "fluid", name = "petroleum-gas", amount = 50},
+      {type = "fluid", name = "light-oil", amount = 40},
+      {type = "item", name = "sulfur", amount = 4},
+    },
+    allow_productivity = true,
+    icon = "__base__/graphics/icons/fluid/basic-oil-processing.png",
+    subgroup = "fluid-recipes",
+    order = "a[oil-processing]-a[basic-oil-processing]",
+    main_product = ""
+  },
+})
