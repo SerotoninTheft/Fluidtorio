@@ -104,7 +104,7 @@ data:extend({
 
 
 
--- RECIPES FOR LOGISTICS
+-- RECIPES FOR LOGISTICS (DONE)
 
 
 
@@ -202,5 +202,86 @@ data:extend({
     results = {
       { type = "item", name = "wood", amount = 5 }
     }
-  }
+  },
+})
+
+
+
+
+
+-- RECIPES FOR CHEMICAL
+
+
+
+
+data:extend({
+  {
+    type = "recipe",
+    name = "metal-catalyst-solution",
+    category = "chemistry",
+    subgroup = "raw-material",
+    enabled = true,
+    energy_required = 5,
+    ingredients = {
+      { type = "fluid", name = "mineral-slurry", amount = 40 },
+      { type = "fluid", name = "weak-acid", amount = 20 },
+    },
+    results = {
+      { type = "fluid", name = "metal-catalyst-solution", amount = 50 }
+    }
+  },
+
+  {
+    type = "recipe",
+    name = "water-electrolysis",
+    category = "chemistry",
+    subgroup = "raw-material",
+    icon = "__Fluidtorio__/graphics/icons/water-electrolysis.png",
+    enabled = true,
+    energy_required = 2,
+    ingredients = {
+      { type = "fluid", name = "clean-water", amount = 50 },
+      { type = "item", name = "copper-plate", amount = 5 },
+    },
+    results = {
+      { type = "fluid", name = "oxygen", amount = 10 },
+      { type = "fluid", name = "hydrogen", amount = 20 },
+      { type = "item", name = "copper-plate", probability = 0.9, amount = 5 },
+    }
+  },
+
+  {
+    type = "recipe",
+    name = "stage-2-water-purification",
+    category = "chemistry",
+    subgroup = "raw-material",
+    icon = "__Fluidtorio__/graphics/icons/very-clean-water.png",
+    enabled = true,
+    energy_required = 2,
+    ingredients = {
+      { type = "fluid", name = "clean-water", amount = 50 },
+    },
+    results = {
+      { type = "fluid", name = "very-clean-water", amount = 20 },
+      { type = "fluid", name = "water", amount = 2 },
+    }
+  },
+
+  {
+    type = "recipe",
+    name = "stage-3-water-purification",
+    category = "chemistry",
+    subgroup = "raw-material",
+    icon = "__Fluidtorio__/graphics/icons/distilled-water.png",
+    enabled = true,
+    energy_required = 5,
+    ingredients = {
+      { type = "fluid", name = "very-clean-water", amount = 50 },
+    },
+    results = {
+      { type = "fluid", name = "distilled-water", amount = 20 },
+      { type = "fluid", name = "clean-water", amount = 20 },
+      { type = "fluid", name = "water", amount = 1 },
+    }
+  },
 })
