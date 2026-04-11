@@ -494,7 +494,32 @@ data:extend({
     }
   },
 
-
+  {
+    type = "recipe",
+    name = "venting-air",
+    category = "chemistry",
+    subgroup = "venting",
+    icons = {
+      {
+        icon = "__Fluidtorio__/graphics/icons/air.png",
+        icon_size = 64,
+        scale = 0.5,
+      },
+      {
+        icon = "__Fluidtorio__/graphics/icons/no-overlay.png",
+        icon_size = 64,
+        scale = 0.5,
+        shift = {0, 0}
+      }
+    },
+    enabled = true,
+    energy_required = 1,
+    ingredients = {
+      { type = "fluid", name = "air", amount = 100 },
+    },
+    results = {
+    }
+  },
   {
     type = "recipe",
     name = "venting-oxygen",
